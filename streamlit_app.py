@@ -1,3 +1,6 @@
 import streamlit as st
 
-st.write("Hola mundo")
+if st.button("Hola"):
+  st.write("Hola")
+else:
+  st.write("Adiós")
