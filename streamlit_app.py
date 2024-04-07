@@ -1,13 +1,10 @@
 import streamlit as st
 
-# demo de texto y botón
-animales = ['gato', 'perro', 'pez', 'lagarto']
+# demo de entrada numérica y botón
+st.header("Calculadora de euros a dólares")
+valor_dolar = st.number_input('Valor del dólar')
+euros = st.number_input('Introduce la cantidad de euros.')
 
-animal = st.text_input('Pide un animal...')
-
-if st.button('Ver disponibilidad'):
-    disponible = animal.lower() in animales
-    if disponible:
-      st.write('¡Lo tenemos!')
-    else:
-      st.write('Lo sentimos, no lo tenemos.')
+if st.button('Calcular'):
+    dolares = euros*valor_dolar
+    st.write(f"{euros} € equivalen a {dolares} $")
