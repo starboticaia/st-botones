@@ -1,10 +1,9 @@
 import streamlit as st
 
 # demo de entrada numérica y botón
-st.header("Calculadora de euros a dólares")
-valor_dolar = st.number_input('Valor del dólar')
-euros = st.number_input('Introduce la cantidad de euros.')
+st.header("Calculadora de pulgadas a centímetros")
+pulgadas = st.number_input('Pulgadas:')
 
 if st.button('Calcular'):
-    dolares = euros*valor_dolar
-    st.write(f"{euros} € equivalen a {dolares} $")
+    centimetros = pulgadas*2.51
+    st.write(f"{pulgadas}" equivalen a {centimetros} cm.")
